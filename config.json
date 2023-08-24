@@ -1,0 +1,37 @@
+{
+	"SmartRecruiter": {
+		"Events": {
+			"job.created": {
+				"Action": "Add new job to sf table",
+				"API": "https://api.smartrecruiters.com/jobs/{jobId}/",
+				"SFTable": "SMARTRECRUITERJOBS_ONTIME",
+				"Identifier_key": "job_id"
+			},  
+			"job.status.updated": {
+				"API": "https://api.smartrecruiters.com/jobs/{jobId}/",
+				"SFTable": "JOBS_DETAILS",
+				"Identifier_key": "id"
+			},
+			"job.updated": {
+				"API": "Which one is correct team name in NBA?",
+				"SFTable": "",
+				"sql": "update {} set status = {} where candidate_id = {}"
+			},
+			"position.created": {
+				"API": "https://api.smartrecruiters.com/jobs/{jobId}/",
+				"SFTable": "",
+				"sql": "update {} set status = {} where candidate_id = {}"
+			},
+			"position.updated": {
+				"API": "Which one is correct team name in NBA?",
+				"SFTable": "",
+				"sql": "update {} set status = {} where candidate_id = {}"
+			},
+			"position.updated1": {
+				"API": "Which one is correct team name in NBA?",
+				"SFTable": "",
+				"sql": "update {} set status = {} where candidate_id = {}"
+			}
+		}
+	}
+}
